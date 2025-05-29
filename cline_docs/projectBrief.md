@@ -6,9 +6,11 @@ Building a django that will back-end of language learning app.
 
 ## Core Features
 
--   Full information of words that imported by user and fetch automatically of Dictionary APIs and optimize with AI
--   categorize words in a main subject that name deck that created by user and can add words to deck
--   Make a litner model for iteration of words that user can learn, the aglorithms of repitation is FSRF
+-  Full information of words that imported by user and fetch automatically of Dictionary APIs and optimize with AI
+- categorize words in a main subject that name deck that created by user and can add words to deck
+- Make a litner model for iteration of words that user can learn, the aglorithms of repitation is FSRF
+- read file ./user_register/auth-system-implementation.md for more information about auth system
+- read file ./words_structure/words_basic_structure.md for more information about words structure
 
 ## Target Users
 
