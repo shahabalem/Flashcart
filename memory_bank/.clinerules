@@ -11,16 +11,23 @@
 
 - flatter as mobile app framework
 - material as front library 
+- GitHub for version control
 
-
--   Tailwind CSS for styling
--   Supabase for backend
--   Vercel for deployment
--   GitHub for version control
+- elastic database as log aggregator 
 
 ## Project Structure
 
--   relative to Django project root
+- relative to Django project root
+- all function must have unit test
+- all function must have document
+- All function must have error handler
+- all API must have swagger document
+- All API must have log
+- All Variable must be clear and snack case
+- All function must have clear name in snack case
+- All function must have clear comment
+
+
 
 ## Database Migrations
 
