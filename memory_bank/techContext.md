@@ -8,19 +8,30 @@
 - Task Queue: Celery
 - Authentication: Django Rest Framework JWT, Django Rest Framework Social OAuth2 JWT
 - API Documentation: Django Rest Swagger
-- Frontend: Flutter
 
 ## Development setup
 The project is designed to run within Docker containers. Local development requires Docker and Docker Compose installed. Database setup and migrations are handled via Django's `manage.py` commands, executed within the Docker containers.
 
 ## Technical constraints
-- Mobile-first approach for the frontend.
-- Integration with external Dictionary APIs.
-- AI optimization for word information.
+- All API must be Backward compatible
+- All variable and function name must be well define and snack case
 - Efficient spaced repetition algorithm implementation.
+- Integration with external Dictionary APIs.
+- Project have standrad versioning
+
+functions
+- all function must have docstring
+- all function must have type hinting
+- all function must have unit test
+- all function must have integration test
+
+endpoints
+- all endpoints must have swagger documentation with example request and response
+- all endpoints must have version and backward compatible
+- all endpoints must have E2E Test
 
 ## Dependencies
-(To be detailed in `requirements.txt` within the main project directory, which is currently inaccessible.)
+- To be detailed in `requirements.txt` within the main project directory
 
 ## Tool usage patterns
 - Docker/Docker Compose for environment management.

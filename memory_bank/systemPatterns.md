@@ -11,7 +11,7 @@ The system is a Django-based backend with MongoDB for document-based data and Po
 - Task Queue: Celery
 - Authentication: Django Rest Framework JWT, Django Rest Framework Social OAuth2 JWT
 - API Documentation: Django Rest Swagger
-- Frontend: Flutter (mobile app)
+- 
 
 ## Design patterns in use
 (To be documented as development progresses)
@@ -19,7 +19,7 @@ The system is a Django-based backend with MongoDB for document-based data and Po
 ## Component relationships
 - Django application interacts with MongoDB and PostgreSQL.
 - Redis for caching and Celery for background tasks.
-- Frontend (Flutter) communicates with Django Rest Framework APIs.
+- Django Rest Framework handles API endpoints.
 
 ## Critical implementation paths
 - Word import and AI optimization.
