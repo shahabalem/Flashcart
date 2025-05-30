@@ -5,7 +5,7 @@
 - OAuth2 implementation
 - Support for Google Oauth2 
 - Rate limiting on auth endpoints
-- combine login and register in one endpoint (front project doesn't know that user is now or not)
+- combine login and register in one endpoint (front project doesn't know that user is now or not)git
 - 
 
 ## Technical Decisions
