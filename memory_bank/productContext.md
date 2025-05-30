@@ -1,13 +1,15 @@
 # Product Context
 
 ## Why this project exists
-This project aims to provide a language learning application.
+This project aims to provide a language learning application specific for english learning. One of the main value proposition in this service is fully customization flow by each user.
 
 ## Problems it solves
-It solves the problem of inefficient language learning by offering features like automated dictionary API fetching, AI optimization, and a spaced repetition system (FSRF).
+It solves the problem of inefficient language learning by offering features like automated word data extraction, and add it in a custome deck. The application should reduce the time to learn and detect which words are hard to learn and implenet a spaced repetiton system to learn them. the main algoritm of this project is FSRF.
 
 ## How it should work
-The application should allow users to import words, categorize them into decks, and learn through a repetition algorithm. It will have a backend powered by Django, MongoDB, and PostgreSQL, and a mobile frontend built with Flutter.
+Application can be two part 
+- standard decks that define by system and all general for all users, this decks coms from standard books like Oxford word Skill
+- custom decks that define by each user, this decks can be created by user and they are specific for each user. this decks can be created by user by adding words manually or by extracting words from a text.
 
 ## User experience goals
 The user experience should be intuitive and efficient, catering to users who prefer traditional learning methods and have limited time for study.
