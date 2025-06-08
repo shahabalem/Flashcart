@@ -1,32 +1,39 @@
-# Active Context
+# Active Context: AI-Powered Language Learning Backend
 
-## Current work focus
+## Current Work Focus
 
-Establishing the foundational project structure and development environment for the AI-Powered Language Learning Backend and its associated Flutter frontend. This includes setting up Docker-based orchestration for all services.
+- Completed OTP-based authentication system
+- Integrated Kaveh Negar SMS service
+- Documented authentication API in Swagger
 
-## Recent changes
+## Recent Changes
 
-- Created and configured the `backend/` directory with a Django project, an initial `core` app, a Python virtual environment, `requirements.txt`, `Dockerfile`, and `.dockerignore`.
-- Created and configured the `frontend/` directory with a new Flutter project.
-- Established a comprehensive `docker-compose.yml` at the project root to orchestrate the Django backend, PostgreSQL, MongoDB, Redis, and Celery worker services.
-- Applied initial Django database migrations via Docker Compose.
-- Confirmed that all core `memory_bank` files (`projectBrief.md`, `productContext.md`, `techContext.md`, `systemPatterns.md`, `technical_conventions.md`, `activeContext.md`, `progress.md`) are in place and correctly structured.
+- Added KAVEH_NEGAR_API_KEY to environment variables
+- Created authentication serializers and services
+- Implemented OTP request and verification views
+- Configured authentication URLs
 
-## Next steps
+## Next Steps
 
-The memory bank initialization is complete. Proceed with implementing the core features outlined in `projectBrief.md`, starting with the user authentication API endpoint for registration within the Django backend.
+- Write unit tests for authentication endpoints
+- Implement rate limiting for OTP requests
+- Add Swagger documentation for new endpoints
 
-## Active decisions and considerations
+## Key Decisions
 
-- The `technical_conventions.md` file has been consolidated and updated as the single source of truth for development guidelines.
-- The project uses a polyglot persistence strategy (PostgreSQL for relational, MongoDB for document).
-- All development will primarily occur within the Dockerized environment.
-- Flutter frontend development will proceed in parallel, connecting to the exposed backend APIs.
+- Using Redis with 2-minute TTL for OTP caching
+- New users created with is_active=False until OTP verification
+- JWT tokens issued upon successful OTP verification
 
-## Important patterns and preferences
+## Completed Tasks
 
-All core memory bank files must exist and be read at the start of every task. Maintain consistent adherence to `technical_conventions.md`.
+1. Implemented OTP request and verification endpoints
+2. Integrated Kaveh Negar SMS service
+3. Created Redis caching service for OTPs
+4. Configured authentication URLs
 
-## Learnings and project insights
+## Learnings
 
-The initial setup process confirmed the viability of a multi-container Dockerized environment for this project. The clear separation of backend and frontend responsibilities, orchestrated by Docker Compose, provides a robust and scalable foundation. The `memory_bank` is now fully initialized with all core files present, including the newly created `techContext.md`.
+- Kaveh Negar Python SDK simplifies SMS integration
+- Django's get_or_create() is efficient for user management
+- Careful line length management needed for Flake8 compliance

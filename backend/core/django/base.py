@@ -96,3 +96,28 @@ USE_TZ = True
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# RestFrameWork Settings
+from core.third.drf import *  # noqa
+
+# Email Settings
+from core.third.email import *  # noqa
+
+# Logging Settings
+from core.third.logging import *  # noqa
+
+# Rate Limit Settings
+from core.third.rate_limit import *  # noqa
+
+# Redis Cache
+from core.third.redis_cache import *  # noqa
+
+# JWT Token Settings
+from core.third.simple_jwt import *  # noqa
+
+# Drf Spectacular
+from core.third.spectacular import *  # noqa
+
+# Variable Settings
+from core.third.variable import *  # noqa
