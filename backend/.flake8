@@ -1,0 +1,17 @@
+[flake8]
+max-line-length = 120
+exclude =
+    .git,
+    .venv,
+    ./env,
+    *.pot,
+    *.py[co],
+    __pycache__,
+    migrations,
+    settings,
+    manage.py,
+    wsgi.py
+ignore =
+    F401,
+    E501,
+    W503

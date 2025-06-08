@@ -1,43 +1,48 @@
-# Project Brief
+# Project Brief: AI-Powered Language Learning Backend
 
-## Overview
+## 1. Project Vision & Goals
 
-Building a django base project that use as back-end for a mobile application that help user to learn new language.
+- **Vision:** Empower MENA region learners (18-40) with an efficient, personalized mobile language learning experience, overcoming content confusion and time constraints via AI optimization and structured iteration.
 
-## Core Features
-- authentication system for user to login/register in App
-- Online dictionary API to fetch words information
-- AI with exact Prompt to optimize words information
-- Linter model to iterate words with FSRS algorithm
+- **Primary Goal(s):**
 
-## Detailed Features
-- extract words information from online dictionaries and optimize with AI
-- categorize words in a main subject that name deck
-- Make a litner model for iteration of words that user can learn
-- Make some type of quiz for user that merge with litner model to help user learn all aspect of words
+  - **MVP Launch:** Deliver a functional Django backend with user authentication, online dictionary integration, initial AI word optimization, and a basic FSRS-based linter model.
+  - **User Engagement:** Achieve 15% average daily active user retention (engagement with linter/quiz) within three months post-MVP.
 
-## Target Users
+- **Problem Statement:** Current language learning solutions often overwhelm users with uncurated content, lack personalized paths, and fail to sustain motivation for adults with limited time and a preference for structured learning.
 
-Persona Attribute | Description comes in continues
-    Region | Mostly this type users are in MENA area ( Middle East and North Africa)
-    Age | Normaly age is between 18 to 40
-    Occupation | usualy have a job or calege student
-    Language Level | the language level is higher than A1 and lower that C2 in CERF level
-    Time Availability | have enough time to learn but they are not motivated to learn
-Behaivers
-    learning models | learn particial time in a day and try to learn in short time
-    rush | The users are rush basicly and like to learn in short time
-    Learning Style | specificly try to learn by tradition models (use books for learning)
-Drivers
-    job | try to learn new language to improve their job or college
-    communicate | try to learn new language to improve their communication skills
-    migration | try to learn new language to migration to another country
-Pain Points    
-    confused | confusing between contents that generated in all services
-    limited time | need to learn more in Shorter time 
-    overhead | don't like to learn new things that are not related to their main goal and structured learning Books
-    motivation | don't have enough motivation to learn new things
+---
 
-## Technical Preferences (optional)
+## 2. Scope (Minimum Viable Product - MVP)
 
-## Tech Stack
+- **In Scope (Backend Focus):**
+
+  - **User Management:** Authentication (login/registration).
+  - **Online Dictionary Integration:** API connectivity for word data.
+  - **Initial AI Word Optimization:** AI model to process dictionary data for learning (via prompts).
+  - **FSRS-based Linter Model:** Core logic for spaced repetition, progress tracking.
+  - **Word Categorization (Decks):** User ability to group words into custom decks.
+  - **Basic Quiz Integration:** Simple quizzes linked to the linter model.
+
+- **Out of Scope (For MVP):**
+  - Full conversational AI or advanced NLP for free-form practice.
+  - Native mobile application development (this is a backend project).
+  - Extensive social features or community forums.
+
+---
+
+## 3. Target Users / User Persona
+
+- **Persona Name:** The "Driven but Dispersed" Learner
+- **Demographics:** MENA region, 18-40 years, college students/professionals, CEFR A1-C2.
+- **Behaviors:** Prefers short, partial learning bursts; seeks quick efficiency; leans towards structured, traditional learning.
+- **Drivers:** Career advancement, improved communication, migration/travel.
+- **Pain Points:** Content overload/confusion, limited time, irrelevant learning, motivation fluctuations.
+
+---
+
+## 4. Technical Stack
+
+- **Backend Framework:** Django / Django REST Framework
+- **Frontend Framework:**: Flutter
+- **Database:** PostgreSQL, MongoDB

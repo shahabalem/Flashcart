@@ -1,15 +1,22 @@
-# Django with Djongo (MongoDB) Project
+# AI-Powered Language Learning Backend
 
-This is a simple Django project using Djongo to integrate with MongoDB. The project includes a basic app named "my" with a simple data model.
+## Overview
 
-## Requirements
+This is the backend repository for an AI-powered mobile application designed to help users learn new languages through optimized content and a spaced repetition system.
 
-- Docker and Docker Compose
+## Documentation (Cline's Memory Bank)
 
-## Running the Application
+All comprehensive project documentation, context, and detailed information can be found in the `memory_bank/` directory.
 
-1. Clone this repository
-2. Run the application using Docker Compose:
+**Start here:**
 
-```bash
-docker-compose up --build
+- [`memory_bank/projectBrief.md`](./memory_bank/projectBrief.md) - High-level project vision and goals.
+- [`memory_bank/technical_conventions.md`](./memory_bank/technical_conventions.md) - All technical guidelines and workflow rules.
+
+## Development Setup
+
+This project is containerized using Docker. Refer to `memory_bank/techContext.md` for technology overview and development environment details.
+
+## Getting Started (Placeholder)
+
+_(Detailed instructions for setting up the local development environment will go here.)_
