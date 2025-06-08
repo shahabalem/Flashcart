@@ -1,0 +1,61 @@
+# IDE-specific files
+.vscode/
+
+# Flutter/Dart specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+/ios/.symlinks/
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
+/android/.gradle/
+/android/local.properties
+/android/*.iml
+/android/app/build/
+/build/
+
+# macOS specific (even if developing on Linux, these might get generated if you build for iOS)
+.DS_Store
+
+# Linux specific (general OS files)
+*~
+.#*
+*.bak
+*.swp
+*.swo
+
+# Crashlytics/Fabric (if used)
+crashlytics/
+fabric/
+
+# AOT precompiled files
+/app.apk
+/app.aab
+/app.ipa
+/app.wasm
+/app.js
+
+# Keystores (if not managed separately)
+*.jks
+*.keystore
+
+# Local C++ build files (if using FFI/C++ interop)
+/windows/
+/linux/
+/macos/
+
+# VS Code launch configurations (optional, if you have sensitive info or
+# highly personalized settings you don't want to share)
+.vscode/launch.json
+
+# You can uncomment these lines if you want to ignore specific platforms in your build output
+# /build/app/outputs/flutter-apk/
+# /build/app/outputs/bundle/
+# /build/web/
+
+# If you have any custom files or directories you want to ignore, add them here.
+# For example:
+# my_secret_file.txt
+# /my_temporary_directory/
