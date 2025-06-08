@@ -97,6 +97,7 @@ USE_TZ = True
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+KAVEH_NEGAR_API_KEY = env("KAVEH_NEGAR_API_KEY", default="change_me")
 
 # RestFrameWork Settings
 from core.third.drf import *  # noqa

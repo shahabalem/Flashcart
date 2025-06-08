@@ -29,7 +29,7 @@ def send_otp_sms(phone_number, otp):
     try:
         api = KavenegarAPI(settings.KAVEH_NEGAR_API_KEY)
         params = {
-            'sender': '',  # Use default sender
+            'sender': '2000660110',
             'receptor': phone_number,
             'message': f'Your verification code is: {otp}',
         }
